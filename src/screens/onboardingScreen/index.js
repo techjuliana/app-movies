@@ -53,7 +53,6 @@ const OnboardingScreen = ({ navigation }) => {
       pages={[
         {
           backgroundColor: "#7029DF",
-          // image: <Homem />,
           title: "Tudo em um só lugar",
           subtitle:
             "Os melhores games, lançamentos, novidades e tudo o que você precisa você vai ver aqui.",
