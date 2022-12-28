@@ -19,7 +19,7 @@ const Dots = ({ selected }) => {
 
 const Skip = ({ ...props }) => (
   <TouchableOpacity style={{ marginHorizontal: 10 }} {...props}>
-    <Text style={{ fontSize: 18, fontWeight: "bold", color: "#fff" }}>
+    <Text style={{ fontSize: 18, fontWeight: "bold", color: `${props => props.theme.white}` }}>
       Pular
     </Text>
   </TouchableOpacity>
@@ -27,7 +27,7 @@ const Skip = ({ ...props }) => (
 
 const Next = ({ ...props }) => (
   <TouchableOpacity style={{ marginHorizontal: 10 }} {...props}>
-    <Text style={{ fontSize: 18, fontWeight: "bold", color: "#FFFFFF" }}>
+    <Text style={{ fontSize: 18, fontWeight: "bold", color: `${props => props.theme.white}` }}>
       Próximo
     </Text>
   </TouchableOpacity>
@@ -35,7 +35,7 @@ const Next = ({ ...props }) => (
 
 const Done = ({ ...props }) => (
   <TouchableOpacity style={{ marginHorizontal: 10 }} {...props}>
-    <Text style={{ fontSize: 18, fontWeight: "bold", color: "#FFFFFF" }}>
+    <Text style={{ fontSize: 18, fontWeight: "bold", color: `${props => props.theme.white}` }}>
       Finalizado
     </Text>
   </TouchableOpacity>
@@ -52,19 +52,19 @@ const OnboardingScreen = ({ navigation }) => {
       onDone={() => navigation.navigate("home")}
       pages={[
         {
-          backgroundColor: "#7029DF",
+          backgroundColor: `${props => props.theme.black}`,
           title: "Tudo em um só lugar",
           subtitle:
             "Os melhores games, lançamentos, novidades e tudo o que você precisa você vai ver aqui.",
         },
         {
-          backgroundColor: "#8B2AAD",
+          backgroundColor: `${props => props.theme.black}`,
           title: "Somos uma comunidade",
           subtitle:
             "Encontre outros jogadores com os mesmos interesses que você em uma comunidade ativa.",
         },
         {
-          backgroundColor: "#C42DAB",
+          backgroundColor: `${props => props.theme.black}`,
           title: "Divirta-se",
           subtitle: "Entre para a maior comunidade de games do mundo.",
         },
