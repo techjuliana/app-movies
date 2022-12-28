@@ -1,41 +1,44 @@
-import { StyleSheet } from "react-native";
+import styled from "styled-components/native";
 
-export const styles = StyleSheet.create({
-  container:{
-    marginLeft: 10,
-    marginRight: 10,
-    flex:1,
-    alignItems: 'center',
-    justifyContent: 'flex-end'
-  },
-  modalContainer:{
-    height: '80%',
-    backgroundColor: `${props => props.theme.black}`,
-    borderTopLeftRadius: 5,
-    borderTopRightRadius: 5
-  },
-  btnVoltar:{
-    backgroundColor: `${props => props.theme.red}`,
-    padding: 10,
-    borderTopLeftRadius: 5,
-    borderTopRightRadius: 5
-  },
-  titulo:{
-    textAlign: 'center',
-    color: `${props => props.theme.white}`,
-    padding: 10,
-    fontSize: 28,
-    fontWeight: 'bold'
-  },
-  sinopse:{
-    color: `${props => props.theme.white}`,
-    fontSize: 18,
-    marginBottom: 8,
-    marginLeft: 10
-  },
-  descricao:{
-    color: `${props => props.theme.white}`,
-    marginLeft: 10,
-    marginRight: 10,
-  }
-});
+export const Container = styled.View`
+  margin-left: 10px;
+  margin-right: 10px;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+`;
+
+export const ModalContainer = styled.View`
+  height: 50%;
+  background-color: ${(props) => props.theme.black};
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+`;
+
+export const BtnVoltar = styled.TouchableOpacity`
+  background-color: ${(props) => props.theme.red};
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+`;
+
+export const Titulo = styled.Text`
+  text-align: center;
+  color: ${(props) => props.theme.white};
+  padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+`;
+
+export const Sinopse = styled.Text`
+  color: ${(props) => props.theme.white};
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+`;
+
+export const Descricao = styled.Text`
+  color: ${(props) => props.theme.white};
+  margin-left: 10px;
+  margin-right: 10px;
+`;
