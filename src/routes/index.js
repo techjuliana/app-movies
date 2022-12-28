@@ -1,22 +1,31 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import movieList from "../screens/movieList";
-
+import MovieList from "../screens/movieList";
+import OnboardingScreen from "./../screens/onboardingScreen";
+import Home from "./../screens/home";
 const Stack = createNativeStackNavigator();
 
 export default function Routes() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="list"
-        component={movieList}
+        name="onboarding"
+        component={OnboardingScreen}
         options={{
           headerShown: false,
         }}
       />
 
-      {/* <Stack.Screen
-        name="login"
-        component={Login}
+      <Stack.Screen
+        name="home"
+        component={Home}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="movies"
+        component={MovieList}
         options={{
           title: "Voltar",
           headerStyle: {
@@ -24,8 +33,7 @@ export default function Routes() {
           },
           headerTintColor: "#fff",
         }}
-      /> */}
-     
+      />
     </Stack.Navigator>
   );
 }
