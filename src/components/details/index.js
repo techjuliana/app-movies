@@ -7,6 +7,7 @@ import {
   Titulo,
   Sinopse,
   Descricao,
+  CapaFilme
 } from "./styled";
 export default function Details(props) {
   return (
@@ -18,6 +19,7 @@ export default function Details(props) {
         <Titulo>{props.filme.nome}</Titulo>
         <Sinopse>Sinopse:</Sinopse>
         <Descricao>{props.filme.sinopse}</Descricao>
+        <CapaFilme source={{ uri: props.filme.foto }} />
       </ModalContainer>
     </Container>
   );

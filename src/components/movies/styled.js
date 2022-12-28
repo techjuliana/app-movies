@@ -1,34 +1,43 @@
 import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
-  card:{
-    backgroundColor: `${props => props.theme.black}`,
-    margin: 15,
-    elevation: 2
-  },
-  capa:{
-    height: 250,
-    zIndex:2,
-  },
-  titulo:{
-    padding: 15,
-    fontSize: 18
-  },
-  areaBotao:{
-    alignItems: 'flex-end',
-    marginTop: -45,
-    zIndex: 9
-  },
-  botao:{
-    width: 100,
-    backgroundColor: `${props => props.theme.red}`,
-    opacity: 1,
-    padding: 8,
-    borderTopLeftRadius: 5,
-    borderBottomLeftRadius: 5
-  },
-  botaoTexto:{
-    color: `${props => props.theme.white}`,
-    textAlign: 'center'
-  }
-});
+import styled from "styled-components/native";
+
+export const Card = styled.View`
+border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border:0.5px ${(props) => props.theme.red};
+  background-color: ${(props) => props.theme.red};
+  margin: 15px;
+`;
+
+export const Capa = styled.Image`
+  height: 250px;
+  z-index: 2;
+`;
+
+export const Titulo = styled.Text`
+  color: ${(props) => props.theme.white};
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+`;
+
+export const AreaBotao = styled.View`
+  align-items: flex-end;
+  margin-top: -45px;
+  z-index: 9;
+`;
+
+export const Botao = styled.TouchableOpacity`
+  width: 100px;
+  background-color: ${(props) => props.theme.red};
+  opacity: 1px;
+  padding: 8px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+`;
+
+export const BotaoTexto = styled.Text`
+  color: ${(props) => props.theme.white};
+  text-align: center;
+`;

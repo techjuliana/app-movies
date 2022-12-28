@@ -9,7 +9,7 @@ export const Container = styled.View`
 `;
 
 export const ModalContainer = styled.View`
-  height: 50%;
+  height: 70%;
   background-color: ${(props) => props.theme.black};
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -18,8 +18,9 @@ export const ModalContainer = styled.View`
 export const BtnVoltar = styled.TouchableOpacity`
   background-color: ${(props) => props.theme.red};
   padding: 10px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 0.5px ${(props) => props.theme.white};
 `;
 
 export const Titulo = styled.Text`
@@ -41,4 +42,11 @@ export const Descricao = styled.Text`
   color: ${(props) => props.theme.white};
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
+`;
+
+export const CapaFilme = styled.Image`
+  height: 180px;
+  border-radius: 15px;
+  margin: 5px;
 `;
