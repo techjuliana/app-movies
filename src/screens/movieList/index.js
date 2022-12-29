@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FlatList, ActivityIndicator } from "react-native";
+import { FlatList, ActivityIndicator, Image } from "react-native";
 
 import api from "./../../services/api";
 import Movies from "../../components/movies";
@@ -11,7 +11,6 @@ export default function MovieList() {
   useEffect(() => {
     async function loadFilmes() {
       const response = await api.get("r-api/?api=filmes");
-      // console.log(response.data);
       setFilmes(response.data);
       setLoading(false);
     }
@@ -28,6 +27,10 @@ export default function MovieList() {
   } else {
     return (
       <Container>
+        <Image
+          source={require("./../../assets/netflix.png")}
+          style={{ width: 150, height: 70, marginLeft: 130 }}
+        />
         <FlatList
           data={filmes}
           keyExtractor={(item) => String(item.id)}

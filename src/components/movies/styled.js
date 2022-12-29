@@ -31,7 +31,6 @@ export const AreaBotao = styled.View`
 export const Botao = styled.TouchableOpacity`
   width: 100px;
   background-color: ${(props) => props.theme.red};
-  opacity: 1px;
   padding: 8px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;

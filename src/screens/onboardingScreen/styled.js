@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 export const ContainerBtn = styled.TouchableOpacity`
-  margin-top: 10px;
+  margin: 14px;
 `;
 
 export const TextBtn = styled.Text`

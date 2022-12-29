@@ -1,5 +1,3 @@
-import { StyleSheet } from "react-native";
-
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -15,14 +13,14 @@ export const Imagem = styled.Image`
 `;
 
 export const Titulo = styled.Text`
-  color: "#FFFFFF";
+  color: ${(props) => props.theme.white};;
   font-size: 29px;
   text-align: center;
   font-weight: bold;
 `;
 
 export const Paragrafo = styled.Text`
-  color: "#B3B0B8";
+  color: ${(props) => props.theme.gray};
   font-size: 15px;
   text-align: center;
   margin-top: 10px;
@@ -31,12 +29,12 @@ export const Paragrafo = styled.Text`
 `;
 
 export const TextoBotao = styled.Text`
-  color: "#fff";
+  color:${(props) => props.theme.white};
   font-weight: bold;
 `;
 
 export const Botao = styled.TouchableOpacity`
-  background-color: "#EA3093";
+  background-color: ${(props) => props.theme.red};
   align-items: center;
   padding: 10px;
   margin-bottom: 10px;

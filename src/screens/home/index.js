@@ -1,20 +1,12 @@
 import { useNavigation } from "@react-navigation/native";
-// import Mulher from "./../../assets/mulher.svg";
-import {
-  Botao,
-  Paragrafo,
-  styles,
-  TextoBotao,
-  Titulo,
-  Container,
-} from "./styled";
-
+import { Botao, Paragrafo, TextoBotao, Titulo, Container } from "./styled";
+import { Image } from "react-native";
 export default function Home() {
   const navigation = useNavigation();
   return (
     <Container>
-      {/* <Mulher style={styles.imagem} /> */}
-      <Titulo>Tutorial completo ✅</Titulo>
+    <Image source={require('./../../assets/n.png')}  style={{width: 120, height: 130, margin:120}} />
+      <Titulo>Seja bem-vindo(a)</Titulo>
       <Paragrafo>
         Entre para a maior comunidade de games do mundo e aproveite todas as
         oportunidades.
