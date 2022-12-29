@@ -49,23 +49,23 @@ const OnboardingScreen = ({ navigation }) => {
         {
           backgroundColor: "#141414",
           image: <Image source={require('./../../assets/netflix.png')} style={{width: 220, height: 130, margin:20}}/>,
-          title: "Tudo em um só lugar",
+          title: "Assista quando quiser.",
 
           subtitle:
-            "Os melhores games, lançamentos, novidades e tudo o que você precisa você vai ver aqui.",
+            "Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.",
         },
         {
           backgroundColor: "#141416",
           image: <Image source={require('./../../assets/clap.png')} style={{width: 160, height: 150, margin:20}}/>,
-          title: "Somos uma comunidade",
+          title: "Crie perfis para crianças.",
           subtitle:
-            "Encontre outros jogadores com os mesmos interesses que você em uma comunidade ativa.",
+            "Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.",
         },
         {
           backgroundColor: "#141418",
           image: <Image source={require('./../../assets/popcorn.png')} style={{width: 160, height: 160, margin:20}}/>,
-          title: "Divirta-se",
-          subtitle: "Entre para a maior comunidade de games do mundo.",
+          title: "Aproveite na TV.",
+          subtitle: "Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.",
         },
       ]}
     />

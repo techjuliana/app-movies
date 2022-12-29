@@ -5,14 +5,17 @@ export default function Home() {
   const navigation = useNavigation();
   return (
     <Container>
-    <Image source={require('./../../assets/n.png')}  style={{width: 120, height: 130, margin:120}} />
-      <Titulo>Seja bem-vindo(a)</Titulo>
+      <Image
+        source={require("./../../assets/n.png")}
+        style={{ width: 120, height: 130, margin: 120 }}
+      />
+      <Titulo>Filmes, séries e muito mais. Sem limites.</Titulo>
       <Paragrafo>
-        Entre para a maior comunidade de games do mundo e aproveite todas as
-        oportunidades.
+        Assista onde quiser. Cancele quando quiser. Quer assistir? Informe seu
+        email para criar ou reiniciar sua assinatura.
       </Paragrafo>
       <Botao onPress={() => navigation.navigate("movies")}>
-        <TextoBotao>Entrar</TextoBotao>
+        <TextoBotao>Vamos lá</TextoBotao>
       </Botao>
     </Container>
   );
