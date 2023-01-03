@@ -4,9 +4,25 @@
 App Movies
 
 <h3 align="center">
-React Native
+Feito em React Native, usando StyledComponents, Routes, Themes, Navegação por Stack
 
-### Projeto Design ⬇️
+### Projeto Design ONBOARDING ⬇️
+
+<img src="http://raw.githubusercontent.com/techjuliana/app-movies/main/design/1.jpg" height="450" width="300">
+
+<img src="http://raw.githubusercontent.com/techjuliana/app-movies/main/design/2.jpg" height="450" width="300">
+
+<img src="http://raw.githubusercontent.com/techjuliana/app-movies/main/design/3.jpg" height="450" width="300">
+
+### Projeto Design NAVEGAR ⬇️
+<img src="http://raw.githubusercontent.com/techjuliana/app-movies/main/design/4.jpg" height="450" width="300">
+
+### Projeto Design FILMES ⬇️
+<img src="http://raw.githubusercontent.com/techjuliana/app-movies/main/design/5.jpg" height="450" width="300">
+
+### Projeto Design MODAL DETALHES FILMES ⬇️
+<img src="http://raw.githubusercontent.com/techjuliana/app-movies/main/design/6.jpg" height="450" width="300">
+<img src="http://raw.githubusercontent.com/techjuliana/app-movies/main/design/7.jpg" height="450" width="300">
 
 ### `npm start`
 
