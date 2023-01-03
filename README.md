@@ -4,7 +4,7 @@
 App Movies
 
 <h3 align="center">
-Feito em React Native, usando API, StyledComponents, Routes, Themes, Navegação por Stack
+Feito em React Native, usando API, StyledComponents, Routes, Themes, Navegação por Stack, Loading de carregamento, Modal detalhes,
 
 ### Projeto Design ONBOARDING ⬇️
 
